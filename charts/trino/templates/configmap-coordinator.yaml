@@ -113,10 +113,14 @@ data:
     ldap.allow-insecure={{ .Values.auth.ldap.allowInsecure }}
     ldap.url={{ .Values.auth.ldap.url }}
     ldap.user-bind-pattern={{ .Values.auth.ldap.userBindPattern }}
+    {{- /*
+    Commented out due to some issues
     ldap.ignore-referrals={{ .Values.auth.ldap.ignoreReferrals }}
     ldap.bind-dn={{ .Values.auth.ldap.bindDn }}
     ldap.bind-password={{ .Values.auth.ldap.bindPassword }}
     ldap.group-auth-pattern={{ .Values.auth.ldap.groupAuthPattern }}
+    */}}
+    
   {{- end }}
   {{- end }}
 
